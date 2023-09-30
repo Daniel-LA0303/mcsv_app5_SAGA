@@ -13,9 +13,6 @@ import java.math.BigDecimal;
 public class CreateInvoiceCommand {
 
     @TargetAggregateIdentifier //with this annotation, Axon will know which aggregate to send the command to
+    private String paymentId;
     private String orderId;
-    private String itemType;
-    private BigDecimal price;
-    private String currency;
-    private String orderStatus;
 }
